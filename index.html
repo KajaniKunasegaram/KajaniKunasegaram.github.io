@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kajdu | Software Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1>Kajani Kunasegaram</h1>
+      <p>Software Engineer | Laravel | C#</p>
+      <!-- <p>Software Developer | Laravel | MAUI | WPF | C#</p> -->
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="section fade-in">
+      <h2>About Me</h2>
+      <p>Hello! I'm <strong>Kajani Kunasegaram</strong> from Jaffna, Sri Lanka. I'm a passionate software developer with experience in building modern web and desktop apps using <b>Laravel, MAUI Blazor, and WPF</b>. I enjoy working on real-world applications and learning new technologies every day.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section fade-in">
+      <h2>Skills & Architecture</h2>
+      <div class="skills-container">
+        <div class="skill-item">
+          <h3>Languages</h3>
+          <p>C#, PHP, HTML, CSS, JavaScript</p>
+        </div>
+        <div class="skill-item">
+          <h3>Frameworks</h3>
+          <p>.NET (WPF, MAUI), Laravel</p>
+        </div>
+        <div class="skill-item">
+          <h3>Architecture</h3>
+          <p>MVVM Architecture, Clean Architecture</p>
+        </div>
+        <div class="skill-item">
+          <h3>Database</h3>
+          <p>SQL Server, MySQL</p>
+        </div>
+        <div class="skill-item">
+          <h3>Tools</h3>
+          <p>Visual Studio Code, Visual Studio, XAMPP, Composer</p>
+        </div>
+        <div class="skill-item">
+          <h3>UI/UX</h3>
+          <p>Blazor, WPF XAML</p>
+        </div>
+      </div>
+      <p class="skills-note">I enjoy building apps with clean, scalable architecture using tools like Entity Framework with SQL Server and MySQL to keep the backend solid and efficient.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section fade-in">
+      <h2>Contact</h2>
+      <p>Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;<a href="mailto:kajani2017@gmail.com">kajani2017@gmail.com</a></p>
+      <p>Location &nbsp;:&nbsp; Jaffna, Sri Lanka</p>
+
+      <h3 style="margin-top: 20px;">Social Media</h3>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/kajani-kunasegaram-332b86238/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/KajaniKunasegaram" target="_blank">GitHub</a></li>
+      </ul>
+      
+      <br/>
+      <p>If you'd like to reach out to me directly, feel free to fill out the form below:</p>
+
+      <form >
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name" />
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email" />
+        
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>  
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Kajani Kunasegaram. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script>
+    // smooth scroll with offset
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e){
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            const headerOffset = 300; // header height
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        });
+    });
+  </script>
+</body>
+</html>
