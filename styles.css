@@ -221,3 +221,61 @@ footer {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+
+
+.exp-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.exp-card {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 6px solid  #007bff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.exp-card h3 {
+  color:  #007bff;
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+}
+
+.exp-year {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.exp-card p {
+  color: #444;
+  line-height: 1.6;
+}
+
+
+/* EDUCATION */
+.edu-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f8ff;
+    border-right: 5px solid   #007bff;
+    border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
