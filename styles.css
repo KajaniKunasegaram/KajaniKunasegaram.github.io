@@ -235,6 +235,7 @@ footer {
   padding: 25px;
   border-radius: 10px;
   border-left: 6px solid  #007bff;
+  border-right: 6px solid  #007bff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   transition: 0.3s ease;
 }
@@ -245,7 +246,7 @@ footer {
 }
 
 .exp-card h3 {
-  color:  #007bff;
+  color: #007bff;
   font-size: 1.4rem;
   margin-bottom: 6px;
 }
@@ -270,13 +271,18 @@ footer {
     padding: 15px;
     background: #f8f8ff;
     border-right: 5px solid   #007bff;
+    border-left: 5px solid   #007bff;
     border-radius: 5px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   transition: 0.3s ease;
+}
+.edu-card h3 {
+  color: #007bff;
+  font-size: 1.4rem;
+  margin-bottom: 6px;
 }
 
 .edu-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }. 
-
